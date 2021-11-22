@@ -14,17 +14,13 @@
     var linkText = document.getElementById("demo2");
 
     if (OSDetails.indexOf("Windows") !== -1) {
-      href.setAttribute('href', "Windows");
-      linkText.innerHTML = "Windows";
+      window.location.href = 'https://play.google.com/store/apps/details?id=com.nagwa.readers'
     } else if (OSDetails.indexOf("iPhone") !== -1) {
-      href.setAttribute('href', "iPhone");
-      linkText.innerHTML = "iPhone";
+        window.location.href = 'https://apps.apple.com/us/app/nagwa-readers/id1580391742'
     } else if (OSDetails.indexOf("Mac") !== -1) {
-      href.setAttribute('href', "Mac");
-      linkText.innerHTML = "Mac";
+        window.location.href = 'https://apps.apple.com/us/app/nagwa-readers/id1580391742'
     } else if (OSDetails.indexOf("Android") !== -1) {
-      href.setAttribute('href', "Android");
-      linkText.innerHTML = "Android";
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.nagwa.readers'
     }
   </script>
 </body>
