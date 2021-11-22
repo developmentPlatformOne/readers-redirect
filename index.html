@@ -1,1 +1,31 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <a id="demo" href="">This Link for: <span id="demo2"><span></a>
+  <script>
+    var OSDetails = window.navigator.userAgent;
+    var href = document.getElementById("demo");
+    var linkText = document.getElementById("demo2");
+
+    if (OSDetails.indexOf("Windows") !== -1) {
+      href.setAttribute('href', "Windows");
+      linkText.innerHTML = "Windows";
+    } else if (OSDetails.indexOf("iPhone") !== -1) {
+      href.setAttribute('href', "iPhone");
+      linkText.innerHTML = "iPhone";
+    } else if (OSDetails.indexOf("Mac") !== -1) {
+      href.setAttribute('href', "Mac");
+      linkText.innerHTML = "Mac";
+    } else if (OSDetails.indexOf("Android") !== -1) {
+      href.setAttribute('href', "Android");
+      linkText.innerHTML = "Android";
+    }
+  </script>
+</body>
+</html>
